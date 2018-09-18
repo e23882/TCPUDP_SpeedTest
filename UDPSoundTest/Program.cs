@@ -72,7 +72,7 @@ namespace UDPSoundTest
                     try
                     {
                         NetworkStream networkStream = clientSocket.GetStream();
-                        byte[] bytesFrom = new byte[10025];
+                        byte[] bytesFrom = new byte[10024];
                         networkStream.Read(bytesFrom, 0, (int)clientSocket.ReceiveBufferSize);
 
                         //var dt = System.Text.Encoding.UTF8.GetString(bytesFrom);
